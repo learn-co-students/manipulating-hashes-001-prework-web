@@ -5,9 +5,11 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
+  newlist = []
+  groceries.values.each do |category|
+    category.each do |item|
+      newlist.push(item)
+    end 
+  end 
+  newlist
 end
