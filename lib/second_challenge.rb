@@ -5,8 +5,12 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
+e=[]
+groceries.each do |group, data|
+  
+  data.collect { |value| e<<value } 
+end
+e
 
   
 
