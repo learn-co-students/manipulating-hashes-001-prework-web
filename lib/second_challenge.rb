@@ -7,7 +7,9 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+  array = groceries.flatten.flatten
+  array.delete_if do |x|
+    groceries.keys.include?(x)
+  end
+  array
 end
