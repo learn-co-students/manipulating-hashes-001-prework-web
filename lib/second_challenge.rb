@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
+full_list = groceries.collect {|k, v| v}
+full_list.flatten
 
 end
