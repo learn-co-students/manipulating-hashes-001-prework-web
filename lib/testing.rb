@@ -17,12 +17,7 @@ array.each do |component|
   end
 end
 end
-return realrealanswer
+puts realrealanswer
 end
 
-
-
-  #code your solution here!
-
-  
-
+second_challenge
