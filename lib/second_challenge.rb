@@ -6,8 +6,9 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
 
-  
+groceries.values.flatten
+#values method returns new array with values from hash
+#flatten method returns new array that is a one-dimensional flattening of self
 
 end
