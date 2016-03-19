@@ -8,14 +8,20 @@ def second_challenge
 
   #code your solution here!
 
-array=[]
-  groceries.values.each do |values|
-   array << values
-  end
-array.flatten
+#Option 1 - one line solution 
+
+values=groceries.values.flatten
 
 
-#Option without .Value
+#Option 2 with iterating over the array created by .values
+# array=[]
+#  groceries.values.each do |values|
+#   array << values
+# end
+# array.flatten
+
+
+#Option 3 without .values
 #  array=[]
 #  groceries.each do |key,value|
 #    array << value
