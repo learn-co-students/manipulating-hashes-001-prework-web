@@ -6,8 +6,14 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  nested_array = groceries.values
+  grocery_list = []
+  nested_array.each do |array|
+    array.each do |arrayn|
+      grocery_list << arrayn
+    end
+  end
 
   
-
+grocery_list
 end
