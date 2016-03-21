@@ -16,7 +16,7 @@ def first_challenge
   #your code here
   contacts.map do |name,keys|
     keys.map do |key,value|
-      if key == :favorite_icecream_flavours
+      if key == :favorite_icecream_flavors
         value.delete_if {|i| i == "strawberry"}
       end
     end
@@ -24,4 +24,5 @@ def first_challenge
   #remember to return your newly altered contacts hash!
   contacts
 end
+
 
