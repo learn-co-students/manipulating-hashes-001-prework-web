@@ -1,0 +1,43 @@
+holiday_supplies = {
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+}
+
+def second_challenge
+  groceries = {
+   dairy: ["milk", "yogurt", "cheese"],
+   vegetable: ["carrots", "broccoli", "cucumbers"],
+   meat: ["chicken", "steak", "salmon"],
+   grains: ["rice", "pasta"]
+  }
+
+  groceries.values.flatten
+
+
+end
+pall = "BAZINGA"
+x = :fourth_of_july.to_s.gsub(/([_])/, " ").split.each {|words| words.capitalize!}
+p x
+
+puts read_out = <<-SUPPLY_LIST
+Winter: #{pall}
+  Christmas: Lights, Wreath
+  New Years: Party Hats
+Summer:
+  Fourth Of July: Fireworks, BBQ
+Fall:
+  Thanksgiving: Turkey
+Spring:
+  Memorial Day: BBQ
+SUPPLY_LIST
