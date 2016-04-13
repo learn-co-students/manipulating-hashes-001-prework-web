@@ -8,6 +8,10 @@ def second_challenge
 
   #code your solution here!
 
-  
+  groceries.values.flatten
 
 end
+
+
+#alternative code
+# groceries.collect {|k, v| v }.flatten
