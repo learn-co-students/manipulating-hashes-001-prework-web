@@ -13,19 +13,9 @@ def first_challenge
     }
   }
 
-array = []
-  #your code here
-contacts.each do |key, item|
-  if key == 'Freddy Mercury'
-    item.each do |key, item|
-      if key == :favorite_icecream_flavors
-        array = item
-      end
-    end
-  end
-end
-array.delete_if{|item| item == "strawberry"}
-contacts["Freddy Mercury"][:favorite_icecream_flavors] = array
+contacts["Freddy Mercury"][:favorite_icecream_flavors].delete("strawberry")
+
+
   #remember to return your newly altered contacts hash!
   contacts
 end
