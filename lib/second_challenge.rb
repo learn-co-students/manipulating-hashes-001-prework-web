@@ -7,7 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
+list_of_foods = groceries.values
+
+list_of_foods.join(" ").split(" ")
 
   
 
 end
+
+#second_challenge
