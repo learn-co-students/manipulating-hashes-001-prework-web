@@ -1,3 +1,4 @@
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,18 +15,15 @@ def first_challenge
   }
 
   #your code here
-  contacts.each do |person, data|
+  	contacts["Freddy Mercury"].each do |attributes, value|
+  		if attributes== :favorite_icecream_flavors
+  			value.delete_if {|attribute| attribute == "strawberry"}
+  		end 
+  		 
+  	end 
+	
 
-  data.each do |attribute, value|
-  
- 
-    if attribute == :favorite_icecream_flavors
-      value.delete("strawberry")
-        # here, each index element in an ice cream flavor string
-    
-      end
-    end
-  end
-contacts
+  #remember to return your newly altered contacts hash!
+  contacts
 end
-
+first_challenge
