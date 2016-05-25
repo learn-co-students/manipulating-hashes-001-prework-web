@@ -6,8 +6,10 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+all_food = []
+groceries.each do |type, food|
+  all_food << food
+end
 
-  
-
+all_food.flatten
 end
