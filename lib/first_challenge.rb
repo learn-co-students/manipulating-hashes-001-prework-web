@@ -14,8 +14,8 @@ def first_challenge
   }
 
   #your code here
-
-
+  contacts["Freddy Mercury"].values[2].delete("strawberry")
+  
   #remember to return your newly altered contacts hash!
   contacts
 end
