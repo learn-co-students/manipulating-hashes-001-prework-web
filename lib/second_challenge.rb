@@ -7,7 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
-
+  arr = []
+  groceries.each do |key, value|
+    value.each do |x|
+      arr << x
+    end
+  end
   
-
+  arr
 end
