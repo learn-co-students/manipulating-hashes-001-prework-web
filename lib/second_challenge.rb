@@ -8,6 +8,10 @@ def second_challenge
 
   #code your solution here!
 
-  
+words = []
+
+words << groceries.values 
+
+words = words.flatten
 
 end
