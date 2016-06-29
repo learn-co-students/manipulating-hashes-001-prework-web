@@ -124,7 +124,7 @@ Jon Snow:
   :knows=>nil
 }
 
-Freddy: 
+Freddy Mercury: 
 { :name=>"Freddy", 
 :email=>"freddy@mercury.com", 
 :favorite_icecream_flavors=>["strawberry", "cookie dough", "mint chip"]
@@ -161,7 +161,7 @@ favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
 
 ```
 
-Let's take is one step further and print out *just the favorite ice cream flavors*. Once again, we'll need to iterate down into that level of the hash, then we can access the favorite ice cream array and print out the flavors: 
+Let's take this one step further and print out *just the favorite ice cream flavors*. Once again, we'll need to iterate down into that level of the hash, then we can access the favorite ice cream array and print out the flavors: 
 
 ```ruby
 contacts.each do |person, data|
@@ -212,7 +212,6 @@ Your good buddy Freddy Mercury has recently developed a strawberry allergy! You 
 **Hint:** *Use the* `.delete_if` *method to eliminate strawberry from the appropriate array.*  
 **Hint:** *Remember that the* `first_challenge` *method needs to return the newly altered* `contacts` *hash.* 
 
-
 ## Higher Level Hash Methods
 
 In a previous lab, you were asked to iterate over a hash and collect the key that pointed to the lowest value. We asked you not to use some of the higher level hash methods there. Now, we're going to learn a few tricks that can make a task like that much easier. 
@@ -243,7 +242,7 @@ family_members.keys
 
 ### `.min`
 
-You can use the `.min` method on a hash to return the key/value *pair* that contains that **lowest** value: 
+You can use the .min method on a hash to return the key/value pair that contains that **lowest key**, either alphabetically or numerically:
 
 ```ruby
 food_items = {apples: 45, pears: 12}
@@ -252,7 +251,7 @@ food_items.min
 #  => [:apples, 45] 
 ```
 
-These are only a few of the many helpful methods out there. Be there to check out the [Ruby Docs on Hashes](http://ruby-doc.org/core-2.2.2/Hash.html) to learn more. 
+These are only a few of the many helpful methods out there. Be sure to check out the [Ruby Docs on Hashes](http://ruby-doc.org/core-2.2.2/Hash.html) to learn more. 
 
 Let's practice some more: 
 
@@ -261,7 +260,7 @@ Let's practice some more:
 
 You'll be coding your solution to this challenge in `lib/second_challenge.rb`. In the `second_challenge` method we have a nested hash of grocery items. 
 
-* Use the `.values` method to collect all of the values of the grocery type keys (`:dairy`, `:vegetables`, `:meat`, `:grains`). The method should return a *one-dimensional* (or "flat") array that *only* includes only the values (groceries such as "milk" and "carrots") without their keys. 
+* Use the `.values` method to collect all of the values of the grocery type keys (`:dairy`, `:vegetables`, `:meat`, `:grains`). The method should return a *one-dimensional* (or "flat") array that *only* includes  the values (groceries such as "milk" and "carrots") without their keys. 
 
 **Hint:** What happens when you call `.values` on a nested hash? What is the return value? How can you *flatten* an array of arrays? Make sure to use `binding.pry` to help you solve this one. 
 
@@ -269,3 +268,5 @@ You'll be coding your solution to this challenge in `lib/second_challenge.rb`. I
 ## Resources: 
 
 * [Ruby Docs on Hashes](http://ruby-doc.org/core-2.2.0/Hash.html)
+
+<a href='https://learn.co/lessons/manipulating-hashes' data-visibility='hidden'>View this lesson on Learn.co</a>
