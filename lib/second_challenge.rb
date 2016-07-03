@@ -1,3 +1,6 @@
+#require 'pry'
+
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +10,18 @@ def second_challenge
   }
 
   #code your solution here!
-
+  final = []
+  groceries.values.each do |grocery|
+      grocery.each do |adder|
+          #binding.pry
+          final << adder
+          end
+      end
+  final
   
 
 end
+
+mark = second_challenge
+
+puts mark
