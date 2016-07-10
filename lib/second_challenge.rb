@@ -6,8 +6,11 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  merged_array = []
 
-  
+  groceries.values.each do |sub_array|
+    merged_array += sub_array
+  end
 
+  merged_array
 end
