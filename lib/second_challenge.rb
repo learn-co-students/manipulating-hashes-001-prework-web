@@ -6,8 +6,11 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
-  
-
+  flat_list = []
+  groceries.values.each { |list| list.each { |food| flat_list << food }}
+  flat_list
 end
+
+# cheater way: 
+# return groceries.values.flatten
+
